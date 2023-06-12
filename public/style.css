@@ -1,0 +1,122 @@
+
+#heart{
+    margin: -750px auto;
+    background-image: url("loveyouforever.png");
+    background-size: cover;
+    width: 700px;
+    height: 700px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-left: 350px;
+}
+p {
+    margin-top: 20px;
+    font-size: 1.5em;
+    margin-left: 100px;
+    text-align: center;
+}
+body {
+    background-color: rgba(104, 196, 254, 0.956);
+}
+.person{
+    width: 1250px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.angel {
+    width: 150px;
+    height: 150px;
+    margin: auto 0;
+    background-image: url("avatar1.png");
+    background-size: cover;
+    position: relative;
+    animation-name: angel;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+}
+
+.rudi {
+    width: 150px;
+    height: 150px;
+    margin: auto 0;
+    background-image: url("avatar2.png");
+    background-size: cover;
+    position: relative;
+    animation-name: rudi;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+}
+
+.rudi img {
+    width: 30px;
+    height:30px;
+    margin-left: 80%;
+    opacity: 0;
+    animation-name: hearts;
+    animation-duration: 1.2s;
+    animation-delay: 7s;
+    animation-iteration-count: infinite;  
+}
+.angel img {
+    width: 30px;
+    height:30px;
+    opacity: 0;
+    animation-name: hearts;
+    animation-duration: 10s;
+    animation-duration: 1.2s;
+    animation-delay: 7s;
+    animation-iteration-count: infinite;  
+}
+
+
+.floor {
+    border-bottom: 2px black solid;
+    width: 1520px;
+}
+.floor2 {
+    width: 1520px;
+    height:150px;
+    background-color: rgb(125, 176, 125);
+}
+
+.carousel-inner {
+    margin-left: 580px;
+    margin-top: 20px;
+    height:370px; 
+    width: 400px;
+}
+
+.carousel-item {
+    border: solid black 1px;
+}
+.carousel-item img {
+    height:50vh; 
+    width: 30vw;
+}
+
+#button {
+    margin-top: 665px;
+    margin-left: 330px;
+    border-radius: 10px;
+}
+
+@keyframes angel {
+    0%   {left:100px;}
+    100% {left:450px;}
+}
+@keyframes rudi {
+    0%   {right:0px;}
+    100% {right:450px;}
+}
+
+@keyframes hearts {
+    0% {opacity: 0%;}
+    25% {opacity: 0%;}
+    50% {opacity: 0%;}
+    75% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
